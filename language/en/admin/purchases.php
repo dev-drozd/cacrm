@@ -1,0 +1,36 @@
+<?php
+return defined('ENGINE') ? 
+array (
+  'allPurchases' => 'All Purchases',
+  'Manage' => 'Manage',
+  'search' => 'Search',
+  'total' => 'Total',
+  'addPurchase' => 'Add Purchase',
+  'delPurchase' => 'Delete Purchase',
+  'editPurchase' => 'Edit Purchase',
+  'Status' => 'Status',
+  'EstimatedBetween' => 'Estimated Between',
+  'Price' => 'Price (Our Cost)',
+  'Name' => 'Name of Product',
+  'Link' => 'Link',
+  'Total' => 'Total',
+  'itemID' => 'Item ID',
+  'Quantity' => 'Quantity',
+  'Issue' => 'Issue',
+  'Comment' => 'Comment (Put any special Notes here for this part)',
+  'Customer' => 'Customer',
+  'trakingNumber' => 'Tracking Number',
+  'Confirm' => 'Confirm',
+  'Object' => 'Store',
+  'EstimatedDate' => 'Estimated Date',
+  'Photo' => 'Photo',
+  'Created' => 'Submitted By',
+  'Proceeds' => 'Proceeds',
+  'SalePrice' => 'Sale Price (What We Charge Customer)',
+  'Confirmed' => 'Purchased Confirmed',
+  'deletedPurchases' => 'Deleted Purchases',
+  'LastEdited' => 'Last Edited',
+  'Currency' => 'Currency',
+)
+ : die("Hacking attempt!");
+?>

@@ -1,0 +1,102 @@
+.iGroup > input,
+.iGroup > select,
+.iGroup > textarea,
+.sSide > input,
+.selOpts > div > select,
+.imMessage > textarea,
+input[name="imSearch"],
+.mngSearch > input,
+.phone > input[type=tel],
+.rGroup > input {
+    font-size: 1rem !important;
+    min-height: 3rem !important;
+    color: #5E6573 !important;
+    padding: 10px 15px;
+    border: none !important;
+    border-bottom: 1px solid #e6e6e6 !important;
+    line-height: 1.15 !important;
+	transition: border-bottom .3s;
+}
+
+
+.iGroup > input:not([readonly]):focus,
+.iGroup > select:not([readonly]):focus,
+.iGroup > textarea:not([readonly]):focus,
+.sSide > input:not([readonly]):focus,
+.selOpts > div > select:not([readonly]):focus,
+.selOpts > div > textarea:not([readonly]):focus,
+.imMessage > textarea:focus,
+input[name="imSearch"]:focus,
+.mngSearch > input:focus,
+.phone > input[type=tel],
+.rGroup > input:not([readonly]):focus {
+	border-bottom: 1px solid #048af5 !important;
+	background: #f2f3f53d;
+}
+
+.iGroup {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eef5f9;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.btnSubmit {
+    background: #4fd405;
+	transition: background .3s;
+	text-transform: uppercase;
+}
+
+.btnSubmit:hover {
+	background: #48c304;
+	transition: background .3s;
+}
+
+.sGroup {
+    padding: 30px 20px;
+    text-align: right;
+    background: #f7f8fa;
+    border-top: 1px solid #eef4f7;
+}
+
+.dragndrop {
+	background: #eef5f9;
+    border: none;
+    padding: 15px;
+    border-radius: 0px;
+	border: 2px dashed #b7cfdc;
+}
+
+.dragndrop > .fa {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.dragndrop:active {
+    padding: 15px;
+    background: #FAFBFF;
+}
+
+.dragndrop:hover {
+    background: #4fd40514;
+	border: 2px dashed #4fd405;
+}
+
+.imgGroup > figure {
+    height: 112px;
+}
+
+.left-nav ul a > span.fa {
+    transition: margin-right .3s;
+}
+
+.left-nav ul a:hover > span.fa {
+    margin-right: 16px;
+}
+
+.tabs > ul > li {
+    padding: 15px;
+}

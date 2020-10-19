@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Company</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/ui.js"></script>
+</head>
+<body>
+    <div class="ctnr">
+        <header class="flex">
+            <div class="nav-toggle">
+                <span class="fa fa-bars" onclick="$('.hdr-nav > ul').slideToggle();"></span>
+            </div>
+            <div class="logo">
+                <a href="/" onclick="Page.get(this.href); return false"><img src="img/logo.svg"></a>
+            </div>
+            <div class="hdr-ctnr flex">
+                <div class="flex">
+                    <div class="hdr-nav">
+                        <ul>
+                            <li><span class="fa fa-times" onclick="$('.hdr-nav > ul').slideUp();"></span></li>
+                            <li class="dd">
+                                <a href="/shop">Shop</a>
+                                <ul>
+                                    <li class="dd">
+                                        <a href="#">Computers</a>
+                                        <ul>
+                                            <li><a href="#">New</a></li>
+                                            <li><a href="#">Rubished</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Keybords</a></li>
+                                </ul>
+                            </li>
+                            <li class="dd">
+                                <a href="/shop">Repairs</a>
+                                <ul>
+                                    <li><a href="#">Keybords</a></li>
+                                </ul>
+                            </li>
+                            <li class="dd">
+                                <a href="/shop">Services</a>
+                                <ul>
+                                    <li><a href="#">Keybords</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Buy sell trade</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="hdr-phone">
+                        1-866-488-2806
+                    </div>
+                    <div class="htd-login">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="hdr-search flex">
+                        <input name="search">
+                        <span class="fa fa-search"></span>
+                    </div>
+                    <div class="hdr-call-me">
+                        <button class="btn">Call me</button>
+                    </div>
+                    <div class="htd-cart">
+                        <div class="support-nav">
+                            <a href="/support" onclick="Page.get(this.href); return false;">Support</a>
+                            <ul>
+                                <li><a href="#">Remote PC repair</a></li>
+                                <li><a href="#">Custom gaming PC</a></li>
+                            </ul>
+                        </div>
+                        <div class="mini-cart">
+                            <a href="/cart" onclick="Page.get(this.href); return false;">Cart</a>
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="Page.get(this.href); return false;">Generic (no label/brand)</a>
+                                    <span class="cartPrice">$50</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="line">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    
+    </div>
+    <div class="ctnr">
+        <div class="page account">
+            <h1>Hello, Jonh!</h1>
+            <div class="a-center"><a href="#">Logout</a></div>
+            <div class="flex">
+                <div class="profile">
+                    <span>Your name:</span> Jonh Doe<br>
+                    <span>Your phone:</span> 2342343434<br>
+                    <span>Your email:</span> test@gmail.com<br>
+                    <span>Delivery address:</span> tes address<br>
+                    <button class="btn">Change info</button>
+                </div>
+                <div class="orders">
+                    <div class="order header">
+                        <div class="o-id">
+                            Order
+                        </div>
+                        <div class="o-date">
+                            Date
+                        </div>
+                        <div class="o-price">
+                            Price
+                        </div>
+                        <div class="o-checkout">
+                            Checkout
+                        </div>
+                        <div class="o-delivery">
+                            Delivery
+                        </div>
+                    </div>
+                    <div class="order">
+                        <div class="o-id">
+                            13223
+                        </div>
+                        <div class="o-date">
+                            2017-03-12
+                        </div>
+                        <div class="o-price">
+                            $45
+                        </div>
+                        <div class="o-checkout">
+                            <span class="status-active"><span class="fa fa-check"></span><span>Paid</span></span>
+                        </div>
+                        <div class="o-delivery">
+                            <span class="status-not-active"><span class="fa fa-times"></span><span>Not delivered</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="line"></div>
+        <div class="ctnr flex">
+            <div class="sn">
+                <ul>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="img/paypal.png">
+            </div>
+        </div>
+        <div class="line last-line">
+            <div class="ctnr flex">
+                <div>2017 © Your Company. All Rights Reserved</div>
+                <div><a href="#">TERMS OF SERVICE</a></div>
+            </div>
+        </div>
+    </footer>
+
+	<script>
+	$(function(){
+        $('li.dd > a').on('click', function() {
+            event.preventDefault();
+            if ($(window).width() <= 991) {
+                $(this).next().slideToggle();
+                mob = 1;
+            }
+        });
+    });
+	</script>
+</body>
+</html>

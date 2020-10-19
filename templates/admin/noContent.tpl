@@ -1,0 +1,1 @@
+<div class="noContent">{text}</div>

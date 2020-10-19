@@ -1,0 +1,8 @@
+array (
+  'method' => 'dialogs-send',
+  'secret_key' => 'bfe038ac7427fd2b5505d1d237dd01cd',
+  'app_id' => '1',
+  'access_token' => '831533bdca968b98e908df9fee3f3cf1',
+  'msg' => 'Hfhfh',
+  'im_id' => '2775',
+)

@@ -1,0 +1,33 @@
+<?php
+return [
+	'Users' => 'Users',
+	'Settings' => 'Settings',
+	'to_site' => 'Go to site',
+	'Password' => 'Password',
+	'SignIn' => 'Sign in',
+	'wPass' => 'Wrong password. Please, try again.',
+	'eEmail' => 'Enter the email',
+	'vEmail' => 'Email is not valid',
+	'ePass' => 'Enter the password.',
+	'Authorization' => 'Authorization',
+	'Owners' => 'Owners',
+	'Admins' => 'Admins',
+	'Managers' => 'Managers',
+	'Staff' => 'Staff',
+	'Salary' => 'Salary',
+	'Organizer' => 'Organizer',
+	'Customers' => 'Customers',
+	'Objects' => 'Stores',
+	'Inventory' => 'Inventory',
+	'Stock&Service' => 'Stock&Service',
+	'Purchase' => 'Purchase',
+	'Services&Selling' => 'Services&Selling',
+	'ECommerce' => 'E-Commerce',
+	'sing_out' => 'Sign out',
+	'Invoices' => 'Invoices',
+	'Bugs' => 'Bugs',
+	'Cash' => 'Cash',
+	'IM' => 'IM',
+	'Issues' => 'Issues'
+];
+?>

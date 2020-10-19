@@ -1,0 +1,1 @@
+<div class="err404"><h1>No content</h1><p>Category has no items</p></div>

@@ -1,0 +1,1 @@
+<div class="userList groups">{groups}</div>

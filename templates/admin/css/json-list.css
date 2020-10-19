@@ -1,0 +1,201 @@
+.json-list {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	background: #fff;
+	border: none !important;
+	font-size: 13px;
+	position: relative;
+	text-align: left;
+	line-height: 14px;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.json-list[disabled], .json-list[disabled] input {
+	background: #efefef !important;
+}
+
+.json-list > ul {
+/* 	position: absolute; */
+	width: 100%;
+	background: #fff;
+/* 	border: 1px solid #ddd; */
+	margin: 0;
+	padding: 0;
+	max-height: 300px;
+	overflow: auto;
+	display: none;
+	z-index: 1;
+}
+
+.json-list > ul > li {
+	display: block;
+	cursor: pointer;
+	list-style-type: none;
+	padding: 8px 0 9px 9px;
+	border-bottom: 1px solid #efefef;
+    min-height: 3rem;
+	outline: none;
+}
+
+.json-list > ul > li > span {
+    color: #2494c4;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+
+.json-list > ul > li > img {
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.json-list > ul > li > p {
+	display:block;
+	color: #666;
+	margin: 5px 0px 0px 0px;
+}
+
+.json-list > ul > li.active {
+	background: #f5f6f7;
+}
+
+.json-list > ul > li::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.json-list > .wrap {
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0px 50px 1px 3px;
+    color: #5E6573;
+	border-bottom: 1px solid #efefef;
+	outline: none;
+}
+
+.json-list > .wrap::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.json-list > .wrap::before {
+    content: ' ';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 1.3rem;
+    right: 15px;
+    border: 10px solid transparent;
+    transition: border .3s;
+    border-top-color: #d2d2d2;
+    border-bottom: 0;
+	transition: transform .3s;
+}
+
+.json-list.open > .wrap::before {
+    transform: rotate(180deg);
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.json-list.pending > .wrap::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    content: "\f110";
+    animation: spinner .6s linear infinite;
+    border: none;
+    width: 20px;
+    height: 20px;
+    color: #35a1d1;
+}
+
+.json-list > .wrap > p {
+	background: #A2CE53;
+	font-size: 1em;
+	line-height: 1em;
+	color: #fff;
+	padding: 5px 21px 6px 7px;
+	margin: 0 3px 3px 0;
+	position: relative;
+	border-radius: 2px;
+	float: left;
+}
+
+.json-list > .wrap > p > i {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding-right: 3px;
+}
+
+.json-list > .wrap > p > i::after {
+    content: ' ';
+    width: 2px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.json-list > .wrap > p > i::before {
+    content: ' ';
+    width: 2px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.json-list > .wrap > input {
+    outline: none;
+    border: 0;
+    float: left;
+    display: inline-block;
+    background: #fff;
+    width: 100%;
+    font-size: 1rem !important;
+    height: 3rem;
+    color: #5E6573;
+    padding: 10px 15px;
+    line-height: 1.15;
+}
+
+.json-list > .wrap > input[readonly] {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input::-webkit-search-cancel-button {
+	cursor: pointer;
+}
+input::-ms-clear {
+	cursor: pointer;
+}
