@@ -1,1 +1,0 @@
-<button class="btn btnLoad{more}" onclick="Doload(this);">Load more</button>
